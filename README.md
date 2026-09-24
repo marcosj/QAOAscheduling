@@ -304,3 +304,19 @@ This repository represents the **Phase 1 QI26-20 / QIntern 2026 research artifac
 The associated preprint documents the mathematical formulation, classical baselines, standard QAOA and GM-QAOA methodology, IBM Quantum experiment, distribution-error analysis, transpilation overhead, limitations, and reproducibility evidence.
 
 **Research status:** Phase 1 complete. The results establish a reproducible small-instance benchmark and a foundation for a broader experimental campaign; they do not establish quantum advantage.
+
+
+## arXiv source preparation
+
+The source package and local PDF build have been checked. `paper/latex_source/main.bbl` is generated and intentionally tracked. Run `python3 tools/build_arxiv.py` from the repository root to regenerate and independently test the submission ZIP.
+
+The corresponding author reports that the preprint dissemination approvals have been received by email. The manuscript now contains the final author-approval sentence and the confirmed statement that no specific monetary grant was received. Approval correspondence remains private and is not distributed with the repository or the arXiv sources. Local compilation is not an arXiv acceptance decision.
+
+
+## Licenses
+
+Original manuscript and non-code content: **CC BY 4.0**. Original software, including notebook code cells: **Apache 2.0**. Third-party materials retain their respective licenses and notices.
+
+See [LICENSING.md](LICENSING.md), [LICENSE-CONTENT](LICENSE-CONTENT), [LICENSE](LICENSE), and [NOTICE](NOTICE). The notebook includes an explicit mixed-content license notice. Select **CC BY 4.0** for the manuscript when submitting to arXiv.
+
+See [the preparation guide](docs/ARXIV_PREPARATION_ES.md) for packaging, private record-keeping, and submission steps.

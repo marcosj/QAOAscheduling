@@ -20,3 +20,17 @@ venv/
 *.out
 *.synctex.gz
 *.toc
+
+# Track the generated bibliography required by the manuscript package.
+!paper/latex_source/main.bbl
+# Additional LaTeX build products (not source files).
+*.lof
+*.lot
+paper/latex_source/main.pdf
+# Build outputs, local signing/approval records and correspondence are private.
+/build/
+/private/
+/approvals_private/
+/QI26-20_PRIVATE_RELEASE/
+*.eml
+*.msg

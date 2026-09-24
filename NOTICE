@@ -1,0 +1,20 @@
+QI26-20 — Quantum Computing for Combinatorial Assignment Optimization
+Copyright 2026 the QI26-20 authors and contributors.
+
+Authors, in manuscript order:
+Iván Barrientos Salas; Ilia Fazeli; Jiya Maurya; Marcos Jiménez;
+Abhishek Raj; Satkar Juneja.
+
+Project repository:
+https://github.com/qubitmx/qi26-20-quantum-assignment-optimization
+
+Original software: Apache License, Version 2.0 (Apache-2.0).
+Original manuscript and other non-code content: Creative Commons Attribution
+4.0 International (CC-BY-4.0).
+See LICENSING.md for the scope of each license and third-party exclusions.
+
+This work was developed within QWorld's QIntern 2026 programme, with scientific
+mentorship and project coordination through Qubit.mx. Acknowledgment of these
+organizations does not transfer copyright to them or imply their endorsement
+of subsequent reuse. Third-party trademarks, materials and dependency licenses
+are not relicensed by this notice.

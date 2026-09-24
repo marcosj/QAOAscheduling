@@ -1,0 +1,320 @@
+{
+  "scope": "Technical local build and clean archive recompilation only",
+  "publication_authorization": "Dissemination approvals reported received by the corresponding author; emails remain private and are not examined by this build.",
+  "release_checks": [
+    "Retain the existing author-approval emails privately; do not include them in GitHub or arXiv.",
+    "Keep the deposited version consistent with the author approvals and disclosed competing interests.",
+    "Select CC BY 4.0 for the manuscript in the arXiv submission form; original software uses Apache-2.0.",
+    "Review the PDF produced by arXiv; local success is not an arXiv acceptance decision."
+  ],
+  "license_for_original_content": "CC-BY-4.0",
+  "license_for_original_software": "Apache-2.0",
+  "arxiv_license_must_be_selected_manually": "CC BY 4.0",
+  "engine": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "bibliography_engine": "BibTeX 0.99d (TeX Live 2025/dev/Debian)",
+  "remote_repository_modified": false,
+  "fresh_bibtex_build": {
+    "steps": [
+      {
+        "command": [
+          "pdflatex",
+          "-no-shell-escape",
+          "-interaction=nonstopmode",
+          "-halt-on-error",
+          "-file-line-error",
+          "-recorder",
+          "main.tex"
+        ],
+        "exit_code": 0,
+        "log": "pdflatex_pass1.txt"
+      },
+      {
+        "command": [
+          "bibtex.original",
+          "main"
+        ],
+        "exit_code": 0,
+        "log": "bibtex.txt"
+      },
+      {
+        "command": [
+          "pdflatex",
+          "-no-shell-escape",
+          "-interaction=nonstopmode",
+          "-halt-on-error",
+          "-file-line-error",
+          "-recorder",
+          "main.tex"
+        ],
+        "exit_code": 0,
+        "log": "pdflatex_pass2.txt"
+      },
+      {
+        "command": [
+          "pdflatex",
+          "-no-shell-escape",
+          "-interaction=nonstopmode",
+          "-halt-on-error",
+          "-file-line-error",
+          "-recorder",
+          "main.tex"
+        ],
+        "exit_code": 0,
+        "log": "pdflatex_pass3.txt"
+      }
+    ],
+    "auxiliary_files_stable": true,
+    "pages": 33,
+    "bibliography_items": 11,
+    "bibliography_keys": [
+      "qi2620",
+      "hadfield2019",
+      "baertschi2020",
+      "lucas2014",
+      "depthsupplement",
+      "kuhn1955",
+      "kirkpatrick1983",
+      "farhi2014",
+      "qiskit",
+      "virtanen2020",
+      "wilson1927"
+    ],
+    "unresolved_references": 0,
+    "missing_glyphs": 0,
+    "overfull_boxes": 0,
+    "underfull_boxes": 0,
+    "warnings": [
+      "Package epstopdf Warning: Shell escape feature is not enabled."
+    ]
+  },
+  "clean_archive_prebuilt_bbl_build": {
+    "steps": [
+      {
+        "command": [
+          "pdflatex",
+          "-no-shell-escape",
+          "-interaction=nonstopmode",
+          "-halt-on-error",
+          "-file-line-error",
+          "-recorder",
+          "main.tex"
+        ],
+        "exit_code": 0,
+        "log": "pdflatex_pass1.txt"
+      },
+      {
+        "command": [
+          "pdflatex",
+          "-no-shell-escape",
+          "-interaction=nonstopmode",
+          "-halt-on-error",
+          "-file-line-error",
+          "-recorder",
+          "main.tex"
+        ],
+        "exit_code": 0,
+        "log": "pdflatex_pass2.txt"
+      },
+      {
+        "command": [
+          "pdflatex",
+          "-no-shell-escape",
+          "-interaction=nonstopmode",
+          "-halt-on-error",
+          "-file-line-error",
+          "-recorder",
+          "main.tex"
+        ],
+        "exit_code": 0,
+        "log": "pdflatex_pass3.txt"
+      }
+    ],
+    "auxiliary_files_stable": true,
+    "pages": 33,
+    "bibliography_items": 11,
+    "bibliography_keys": [
+      "qi2620",
+      "hadfield2019",
+      "baertschi2020",
+      "lucas2014",
+      "depthsupplement",
+      "kuhn1955",
+      "kirkpatrick1983",
+      "farhi2014",
+      "qiskit",
+      "virtanen2020",
+      "wilson1927"
+    ],
+    "unresolved_references": 0,
+    "missing_glyphs": 0,
+    "overfull_boxes": 0,
+    "underfull_boxes": 0,
+    "warnings": [
+      "Package epstopdf Warning: Shell escape feature is not enabled."
+    ]
+  },
+  "clean_archive_pdf_text_identical": true,
+  "zip_root_validated": true,
+  "zip_files": [
+    "Appendices/appendix_a_compliance.tex",
+    "Appendices/appendix_b_circuits.tex",
+    "Appendices/appendix_c_distributions.tex",
+    "Appendices/appendix_d_reproducibility.tex",
+    "Figures/distribution_error_metrics.png",
+    "Figures/gm_qaoa_transpiled_folded_part_1.png",
+    "Figures/gm_qaoa_transpiled_folded_part_2.png",
+    "Figures/gm_qaoa_transpiled_folded_part_3.png",
+    "Figures/gm_qaoa_transpiled_folded_part_4.png",
+    "Figures/hardware_resource_overhead.png",
+    "Figures/ideal_hardware_quality_comparison.png",
+    "Figures/ideal_vs_ibm_marrakesh_histograms.png",
+    "Figures/logical_qubo_topology.png",
+    "Figures/reference_qaoa_depth_energy_histories.png",
+    "Figures/standard_qaoa_depth_comparison.png",
+    "Figures/standard_qaoa_transpiled_folded.png",
+    "Figures/transpilation_topology_overhead.png",
+    "Sections/01_introduction.tex",
+    "Sections/02_problem_definition.tex",
+    "Sections/03_qubo_formulation.tex",
+    "Sections/04_classical_baselines.tex",
+    "Sections/05_qaoa_gm_qaoa.tex",
+    "Sections/06_experimental_setup.tex",
+    "Sections/07_results.tex",
+    "Sections/08_error_analysis.tex",
+    "Sections/09_discussion_limitations.tex",
+    "Sections/10_conclusion_future_work.tex",
+    "anc/Data/derived_metrics.json",
+    "anc/Data/full_hardware_distributions.csv",
+    "anc/Data/gm_qaoa_top20.csv",
+    "anc/Data/standard_qaoa_top20.csv",
+    "anc/LICENSES/Apache-2.0.txt",
+    "anc/LICENSES/CC-BY-4.0.txt",
+    "anc/LICENSES/NOTICE.txt",
+    "anc/LICENSING.txt",
+    "anc/README.txt",
+    "main.bbl",
+    "main.tex",
+    "references.bib"
+  ],
+  "zip_file_count": 39,
+  "used_figures": 13,
+  "tex_source_count": 15,
+  "ancillary_file_count": 9,
+  "omitted_unused_figures": [
+    "gm_qaoa_transpiled_folded_full.png",
+    "reference_qaoa_p1_optimization_history.png"
+  ],
+  "pdf_sha256": "c31fe2cacb40130d7f89f54243cabb6e81baaa0dfce53c1c3c4197ca8a299a27",
+  "arxiv_zip_sha256": "4f14665020a4c60a48f303c4c9f85ff93e972e5190105a22f933fdc961976cc0",
+  "main_bbl_sha256": "485a0ab8eb7631a973903a983cabbc0e63e85e47eceefcd7f1e7eda22b19e3da",
+  "manifest": {
+    "Appendices/appendix_a_compliance.tex": "9838692f1cad6a52ceeb5e969f4d7aa0a39274d8b4942e2e8e8736bc500f8806",
+    "Appendices/appendix_b_circuits.tex": "80799962a96cd471ae2ad9b84d688b3e04aac22a96e60a8f19504a845ca5fca6",
+    "Appendices/appendix_c_distributions.tex": "cf31743b9a07c22afe02c199a1db0df1ae0d9d673485d66159fa2015db8945cf",
+    "Appendices/appendix_d_reproducibility.tex": "76074ef6e35ce26538dd6e55b4c07b1d33c863477d0c54d894c58c87347ae314",
+    "Figures/distribution_error_metrics.png": "a9e11435666dd3a8b7193ea0fc3a5a2a685a3127d30bba65aae31a73b84203ab",
+    "Figures/gm_qaoa_transpiled_folded_part_1.png": "5a0e05d230e0eebae86afa19542b08d46445aad140be1418b16e964bb1f8dfd1",
+    "Figures/gm_qaoa_transpiled_folded_part_2.png": "78bad999e83b91283831b6a05f0fc420834c39e00de4d2c9979d4cada1d42e13",
+    "Figures/gm_qaoa_transpiled_folded_part_3.png": "7adf298c5fd960d4e6db7d93a02e112c26d182a91be6faea8447b201be1c8aa7",
+    "Figures/gm_qaoa_transpiled_folded_part_4.png": "2c4b8966f6ef90dd4e2a11b9506de9dd8937ef336788b23fd1dfce45bf059bc6",
+    "Figures/hardware_resource_overhead.png": "4fdc265a5756f35c43441d5804a554d938c9f12623155b17b2bd883da6d192b6",
+    "Figures/ideal_hardware_quality_comparison.png": "ac2465274a7fd8600074165732d34fb865ec9ed7ac45223e32c9637fe94a4aa9",
+    "Figures/ideal_vs_ibm_marrakesh_histograms.png": "6604aa4d42b6d9b251654b37b337546256d70617b5d9716f23a88e285b8a4d0f",
+    "Figures/logical_qubo_topology.png": "3230503d2fe96df26acf223f3ead07a574482003aedddf1512979d546f364906",
+    "Figures/reference_qaoa_depth_energy_histories.png": "8bc6c23259c858cdf8c77052e49dde2365c0f86363cf405fa9ac0997b1839f38",
+    "Figures/standard_qaoa_depth_comparison.png": "2e448b17212c40a8195679efbe98bb9b18e558d7facdccf4665ebc431a718f7c",
+    "Figures/standard_qaoa_transpiled_folded.png": "db0faba259d25b8f78cafa8cf2e6180270b0712e3bde640f3b051ad68bb4bbec",
+    "Figures/transpilation_topology_overhead.png": "1efbfebe139152f88e27a00da9625ac5be9acf4181d7675211ea9aaeface5964",
+    "Sections/01_introduction.tex": "51cce2695b3dbc9e7fd3ec552bbe7aeec5b1f51c4a1f94bcd3e7d3c29603fbd6",
+    "Sections/02_problem_definition.tex": "ba2604d39902fab717421208c22512ab8fa4425839c8304cc15884ede2d64e7b",
+    "Sections/03_qubo_formulation.tex": "2ce1898564d1f0424b1493c5ebe544e5746e55aa623a8d779a01b2c33638147c",
+    "Sections/04_classical_baselines.tex": "cabab956dd60243fdaa7997e19251ec8af1fba103d87b9cfc4ec58ceb6805564",
+    "Sections/05_qaoa_gm_qaoa.tex": "3e814d13cbd10daf6955258b79906f0b731360072002cb76bd37677d39d1b54b",
+    "Sections/06_experimental_setup.tex": "64c7d82a66c7cdef0dbb2fb8b2e5e705c4b1fbef0756426be3eb2767e960e060",
+    "Sections/07_results.tex": "6971d2bb35416011d30aabf2d347a32926c2387fc17bbc6f463c07b355feafd5",
+    "Sections/08_error_analysis.tex": "6f643aae59254c15217f80037b80c02e0ed1238d88442de627d0294cb3579134",
+    "Sections/09_discussion_limitations.tex": "3ed6d358d336cc5c9db6afcebb6b4c0c739145ac3450aec733d44b5103d6aea1",
+    "Sections/10_conclusion_future_work.tex": "2dc54769c8ef5078087d5389b3ff0caef803cc0d4e8301af9fc970cc3d32632c",
+    "anc/Data/derived_metrics.json": "72f52a2a2f96be039259b0ff79eedaf6458e2bec3072a1d3b9794c9f5975994c",
+    "anc/Data/full_hardware_distributions.csv": "37b43018d93d3a179e300794ccc1577e43433a23fcb5e15f22173a566d345e7f",
+    "anc/Data/gm_qaoa_top20.csv": "733ca2288a1e2aff55c82d24998444e5d3dff2892c17a8b644e62652d591d089",
+    "anc/Data/standard_qaoa_top20.csv": "8e0175f6628beb5c949021eef3be64205d79bb1bd10d90dabac2a2f4fd9b01a0",
+    "anc/LICENSES/Apache-2.0.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "anc/LICENSES/CC-BY-4.0.txt": "419896aea50c15d6e40c5b4baf4bd346f78223b9a354c7357ad00262afdc08ec",
+    "anc/LICENSES/NOTICE.txt": "15654389b8a02a145dfdd05d340c2b3543b2aaf4a40eeb5551d5d2a21e6005be",
+    "anc/LICENSING.txt": "73aaf8de5c88da4cbca5749155d3bb47438f0c4208150b5a1133df843adf4870",
+    "anc/README.txt": "cbb37e3e938db201bf77da432f74cbf26256b5bb87833f99dbbad36e6400a995",
+    "main.bbl": "485a0ab8eb7631a973903a983cabbc0e63e85e47eceefcd7f1e7eda22b19e3da",
+    "main.tex": "47a470a0e78c011944f4b37fef0c1a4c620580e48c0f740d7829ea4826173e51",
+    "references.bib": "fd9c442c25af4ca9f9276caf507777bcaa9520d46365f8e5dcdbf073baabf267"
+  },
+  "result": "PASS - LOCAL COMPILATION AND SELF-CONTAINED LICENSED ARCHIVE",
+  "release_revision": "2026-09-24-r2",
+  "source_archive_used": "QI26-20_repositorio_corregido.zip",
+  "delivered_arxiv_archive": "QI26-20_arxiv_sources_v2.zip",
+  "delivered_repository_archive": "QI26-20_repositorio_v2.zip",
+  "funding_statement": "This work was carried out as project QI26-20 within QWorld's QIntern 2026 programme, with scientific mentorship and project coordination through Qubit.mx. The support acknowledged here is in-kind academic and organizational support, consisting of the research-training framework, mentorship, and project coordination. The authors received no specific monetary grant for this study.",
+  "scientific_integrity": {
+    "unchanged_file_count": 45,
+    "unchanged_files": [
+      "QI26-20_QIntern2026_QWorld_Style_Presentation.pdf",
+      "paper/latex_source/Appendices/appendix_a_compliance.tex",
+      "paper/latex_source/Appendices/appendix_b_circuits.tex",
+      "paper/latex_source/Appendices/appendix_c_distributions.tex",
+      "paper/latex_source/Appendices/appendix_d_reproducibility.tex",
+      "paper/latex_source/Data/derived_metrics.json",
+      "paper/latex_source/Data/full_hardware_distributions.csv",
+      "paper/latex_source/Data/gm_qaoa_top20.csv",
+      "paper/latex_source/Data/standard_qaoa_top20.csv",
+      "paper/latex_source/Figures/distribution_error_metrics.png",
+      "paper/latex_source/Figures/gm_qaoa_transpiled_folded_full.png",
+      "paper/latex_source/Figures/gm_qaoa_transpiled_folded_part_1.png",
+      "paper/latex_source/Figures/gm_qaoa_transpiled_folded_part_2.png",
+      "paper/latex_source/Figures/gm_qaoa_transpiled_folded_part_3.png",
+      "paper/latex_source/Figures/gm_qaoa_transpiled_folded_part_4.png",
+      "paper/latex_source/Figures/hardware_resource_overhead.png",
+      "paper/latex_source/Figures/ideal_hardware_quality_comparison.png",
+      "paper/latex_source/Figures/ideal_vs_ibm_marrakesh_histograms.png",
+      "paper/latex_source/Figures/logical_qubo_topology.png",
+      "paper/latex_source/Figures/reference_qaoa_depth_energy_histories.png",
+      "paper/latex_source/Figures/reference_qaoa_p1_optimization_history.png",
+      "paper/latex_source/Figures/standard_qaoa_depth_comparison.png",
+      "paper/latex_source/Figures/standard_qaoa_transpiled_folded.png",
+      "paper/latex_source/Figures/transpilation_topology_overhead.png",
+      "paper/latex_source/Sections/01_introduction.tex",
+      "paper/latex_source/Sections/02_problem_definition.tex",
+      "paper/latex_source/Sections/03_qubo_formulation.tex",
+      "paper/latex_source/Sections/04_classical_baselines.tex",
+      "paper/latex_source/Sections/05_qaoa_gm_qaoa.tex",
+      "paper/latex_source/Sections/06_experimental_setup.tex",
+      "paper/latex_source/Sections/07_results.tex",
+      "paper/latex_source/Sections/08_error_analysis.tex",
+      "paper/latex_source/Sections/09_discussion_limitations.tex",
+      "paper/latex_source/Sections/10_conclusion_future_work.tex",
+      "paper/latex_source/references.bib",
+      "requirements.txt",
+      "results/job-d9vl8qfo3ppc73akfak0.zip",
+      "results/phase1_claims_checklist.csv",
+      "results/phase1_classical_baselines.csv",
+      "results/phase1_compliance_matrix.csv",
+      "results/phase1_gm_qaoa_ideal_results.csv",
+      "results/phase1_hardware_summary.csv",
+      "results/phase1_hardware_top_outcomes.csv",
+      "results/phase1_standard_qaoa_depth_results.csv",
+      "results/phase1_transpilation_metrics.csv"
+    ],
+    "notebook_code_cells_unchanged": true,
+    "notebook_outputs_unchanged": true,
+    "notebook_existing_metadata_unchanged": true,
+    "notebook_changes_only": "Appended license notice in first Markdown cell and added licensing metadata",
+    "notebook_and_hardware_executed": false
+  },
+  "visual_comparison": {
+    "renderer": "PyMuPDF",
+    "pages_with_render_differences": [
+      23
+    ],
+    "pages_identical_to_previous_pdf": 32,
+    "edited_page_visually_inspected": 23
+  }
+}

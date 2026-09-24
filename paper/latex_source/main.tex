@@ -1,3 +1,5 @@
+% SPDX-License-Identifier: CC-BY-4.0
+% Original manuscript content; original software excerpts retain Apache-2.0.
 \documentclass[11pt,a4paper]{article}
 
 % -----------------------------------------------------------------------------
@@ -29,12 +31,12 @@
 \IfFileExists{siunitx.sty}{
   \usepackage{siunitx}
 }{
-  \newcommand{\SI}[2]{\ensuremath{##1\,\mathrm{##2}}}
+  \newcommand{\SI}[2]{\ensuremath{#1\,\mathrm{#2}}}
 }
 \usepackage{enumitem}
 \usepackage{listings}
 \usepackage{fancyhdr}
-\usepackage{url}
+\usepackage{xurl} % Allow long repository URLs and data paths to wrap.
 \usepackage{hyperref}
 
 \hypersetup{
@@ -43,7 +45,7 @@
   citecolor=blue!42!black,
   urlcolor=blue!55!black,
   pdftitle={Standard and Grover-Mixer QAOA for Generalized Bipartite Assignment},
-  pdfauthor={QI26-20 QIntern Research Team}
+  pdfauthor={Iván Barrientos Salas, Ilia Fazeli, Jiya Maurya, Marcos Jiménez, Abhishek Raj, Satkar Juneja}
 }
 
 \IfFileExists{siunitx.sty}{
@@ -160,21 +162,37 @@ Both hardware distributions contained the classical optimum of score $3.25$, yie
 \input{Sections/09_discussion_limitations}
 \input{Sections/10_conclusion_future_work}
 
+% Written approvals are retained privately by the corresponding author.
+% See docs/ARXIV_PREPARATION_ES.md, "Confirmaciones privadas".
 \section*{Author Contributions}
 \addcontentsline{toc}{section}{Author Contributions}
-The contribution statement follows the ownership recorded in the notebook. Jiya Maurya led the mathematical formulation and \QUBO{} derivation, with support from Satkar Juneja and Ilia Fazeli. Abhishek Raj led synthetic-data generation and constraint validation, with support from Jiya Maurya and Satkar Juneja. Satkar Juneja led the classical baselines and evaluation metrics, with support from Jiya Maurya and Marcos Jiménez. Marcos Jiménez led the Qiskit/\QAOA{} simulator implementation, with support from Ilia Fazeli, Abhishek Raj, and Satkar Juneja. Ilia Fazeli led documentation and experiment tracking, with support from Marcos Jiménez and Jiya Maurya. Iván Barrientos Salas provided conceptualization, supervision, scientific auditing, integration of generalized capacities and \GMQAOA{}, hardware methodology, validation, and manuscript preparation. All authors should confirm the final CRediT taxonomy and author order before journal submission.
+The contribution statement follows the ownership recorded in the notebook. Jiya Maurya led the mathematical formulation and \QUBO{} derivation, with support from Satkar Juneja and Ilia Fazeli. Abhishek Raj led synthetic-data generation and constraint validation, with support from Jiya Maurya and Satkar Juneja. Satkar Juneja led the classical baselines and evaluation metrics, with support from Jiya Maurya and Marcos Jiménez. Marcos Jiménez led the Qiskit/\QAOA{} simulator implementation, with support from Ilia Fazeli, Abhishek Raj, and Satkar Juneja. Ilia Fazeli led documentation and experiment tracking, with support from Marcos Jiménez and Jiya Maurya. Iván Barrientos Salas provided conceptualization, supervision, scientific auditing, integration of generalized capacities and \GMQAOA{}, hardware methodology, validation, and manuscript preparation.
+
+All authors reviewed and approved the final manuscript and agreed to its
+submission to arXiv.
 
 \section*{Data and Code Availability}
 \addcontentsline{toc}{section}{Data and Code Availability}
-The reproducible artifact is organized as the repository \texttt{QI26-20-QUBO-QAOA-Benchmark}. It contains the executed notebook, dependency specification, exported result tables, scientific-claims checklist, and compliance matrix. The archived IBM Quantum job identifier is \texttt{d9vl8qfo3ppc73akfak0}. The public repository URL should be inserted when the repository is released. The full distribution table reconstructed from the archived Runtime result is included with the manuscript source under \texttt{Data/full\_hardware\_distributions.csv}.
+The reproducible artifact is publicly available in the repository
+\url{https://github.com/qubitmx/qi26-20-quantum-assignment-optimization}.
+It contains the executed notebook, dependency specification, exported result tables, scientific-claims checklist, and compliance matrix. The archived IBM Quantum job identifier is \texttt{d9vl8qfo3ppc73akfak0}. The full distribution table reconstructed from the archived Runtime result is stored in the repository at \path{paper/latex_source/Data/full_hardware_distributions.csv}. The arXiv source package includes the same table as ancillary material at \path{anc/Data/full_hardware_distributions.csv}.
+
+\noindent\textbf{Licensing.} The original manuscript and non-code research content are licensed under \href{https://creativecommons.org/licenses/by/4.0/}{Creative Commons Attribution 4.0 International (CC BY 4.0)}. Original accompanying software is licensed under the \href{https://www.apache.org/licenses/LICENSE-2.0}{Apache License 2.0}. Third-party materials retain their respective licenses and notices.
 
 \section*{Acknowledgments}
 \addcontentsline{toc}{section}{Acknowledgments}
-This work was developed in the QI26-20 / QIntern 2026 research context. The authors acknowledge the use of Qiskit and IBM Quantum services. Access to the quantum processing unit does not imply endorsement of the conclusions by IBM.
+The authors thank the QWorld/QIntern 2026 community and Qubit.mx for the research-training and collaborative setting in which this work was developed. The authors acknowledge the use of Qiskit and IBM Quantum services. Access to the quantum processing unit does not imply endorsement of the conclusions by IBM.
 
-\section*{Funding and Conflicts of Interest}
-\addcontentsline{toc}{section}{Funding and Conflicts of Interest}
-Funding and conflict-of-interest declarations were not specified in the repository artifacts and must be confirmed by all authors before external submission.
+\section*{Funding and Institutional Support}
+\addcontentsline{toc}{section}{Funding and Institutional Support}
+This work was carried out as project QI26-20 within QWorld's QIntern 2026 programme, with scientific mentorship and project coordination through Qubit.mx. The support acknowledged here is in-kind academic and organizational support, consisting of the research-training framework, mentorship, and project coordination. The authors received no specific monetary grant for this study.
+
+% RELEASE CHECK: the paragraph below discloses a known organizational role.
+% Collect an individual competing-interest declaration from EVERY author.
+% Do not assert "no competing interests" without those confirmations.
+\section*{Conflicts of Interest}
+\addcontentsline{toc}{section}{Conflicts of Interest}
+Iván Barrientos Salas leads Qubit.mx and served as the QI26-20 project mentor. This relationship is disclosed in connection with the academic and organizational support described above.
 
 \clearpage
 \appendix
