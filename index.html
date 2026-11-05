@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Qintern Project Documentation & Paper</title>
+    <title>QAOA Solution for the Generalized Bipartite Assignment Problem</title>
     <style>
         body { background: #0d1117; color: #c9d1d9; font-family: sans-serif; padding: 2rem; max-width: 900px; margin: 0 auto; }
         .pdf-container { margin-top: 2rem; border: 1px solid #30363d; border-radius: 6px; overflow: hidden; background: #161b22; }
@@ -12,9 +12,23 @@
     </style>
 </head>
 <body>
-    <h1>Qintern Project Documentation</h1>
-    <p>Core simulation findings, architecture breakdowns, and research preprint.</p>
-    
+    <div class="card" style="margin-bottom: 2rem;">
+        <h3 class="card-title">QAOAscheduling</h3>
+        <p class="subtitle">A Reproducible QUBO–QAOA Benchmark for Generalized Bipartite Assignment on NISQ Hardware</p>
+        <p class="card-body">
+            This repository contains the research results for <strong>QI26-20 / QIntern 2026 (QWorld)</strong>. It models generalized bipartite assignment as a Quadratic Unconstrained Binary Optimization (QUBO) problem and benchmarks classical baselines, standard <strong>Quantum Approximate Optimization Algorithm (QAOA)</strong>, and <strong>Grover-Mixer QAOA (GM-QAOA)</strong> in ideal simulation and on real IBM Quantum hardware (<code>ibm_marrakesh</code>).
+        </p>
+        
+        <div style="margin-top: 1rem; margin-bottom: 1rem;">
+            <span class="tag">Core Findings & Scope</span>
+            <ul style="color: var(--text-muted); font-size: 0.95rem; padding-left: 1.2rem; margin-top: 0.5rem;">
+                <li><strong>Not Quantum Advantage:</strong> Establishes a controlled correctness and transpilation resource benchmark on small NISQ instances, not a runtime competition against classical exact solvers.</li>
+                <li><strong>Classical Baselines:</strong> Evaluated via exact enumeration, the Hungarian algorithm, greedy methods, and simulated annealing across 3×3 and 4×4 one-to-one, and 4×2 exact-capacity instances.</li>
+                <li><strong>Standard QAOA vs. GM-QAOA:</strong> While GM-QAOA achieved 100% ideal feasible-subspace concentration in simulation, physical execution on <code>ibm_marrakesh</code> revealed that GM-QAOA's high transpilation overhead (~7.9× more native CZ gates than standard QAOA) led to severe distribution degradation (TVD 0.881). Both physical circuits successfully sampled the global optimum, but high-probability recovery was constrained by physical circuit depth.</li>
+            </ul>
+        </div>
+        <a href="https://github.com/marcosj/QAOAscheduling" class="card-link" target="_blank">View Repository on GitHub →</a>
+    </div>    
     <p><a href="paper/QI26_20_preprint.pdf" class="btn" target="_blank">Download PDF Version ↓</a></p>
     <div class="pdf-container">
         <object data="paper/QI26_20_preprint.pdf" type="application/pdf" width="100%" height="750px">
