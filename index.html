@@ -3,12 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>QAOA Solution for the Generalized Bipartite Assignment Problem</title>
+    <link rel="stylesheet" href="../style.css">
     <style>
         body { background: #0d1117; color: #c9d1d9; font-family: sans-serif; padding: 2rem; max-width: 900px; margin: 0 auto; }
         .pdf-container { margin-top: 2rem; border: 1px solid #30363d; border-radius: 6px; overflow: hidden; background: #161b22; }
         iframe { width: 100%; height: 750px; border: none; }
         .btn { display: inline-block; padding: 0.5rem 1rem; background: #21262d; color: #58a6ff; border: 1px solid #30363d; border-radius: 6px; text-decoration: none; font-family: monospace; }
         .btn:hover { border-color: #58a6ff; }
+        .card ul {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            padding-left: 1.2rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0;
+        }
+        
+        .card li {
+            margin-bottom: 0.4rem;
+        }
     </style>
 </head>
 <body>
@@ -16,7 +28,7 @@
         <h3 class="card-title">QAOAscheduling</h3>
         <p class="subtitle">A Reproducible QUBO–QAOA Benchmark for Generalized Bipartite Assignment on NISQ Hardware</p>
         <p class="card-body">
-            This repository contains the research results for <strong>QI26-20 / QIntern 2026 (QWorld)</strong>. It models generalized bipartite assignment as a Quadratic Unconstrained Binary Optimization (QUBO) problem and benchmarks classical baselines, standard <strong>Quantum Approximate Optimization Algorithm (QAOA)</strong>, and <strong>Grover-Mixer QAOA (GM-QAOA)</strong> in ideal simulation and on real IBM Quantum hardware (<code>ibm_marrakesh</code>).
+            This repository contains the research results for <strong>QI26-20 / QIntern 2026 (QWorld)</strong>. It models generalized bipartite assignment as a Quadratic Unconstrained Binary Optimization (QUBO) problem and benchmarks classical baselines, standard <strong>Quantum Approximate Optimization Algorithm (QAOA)</strong>, and <strong>Grover-Mixer QAOA (GM-QAOA)</strong> in ideal simulation and on real IBM Quantum hardware.
         </p>
         
         <div style="margin-top: 1rem; margin-bottom: 1rem;">
