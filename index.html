@@ -21,9 +21,23 @@
         .card li {
             margin-bottom: 0.4rem;
         }
+        .wide-section {
+            max-width: 100% !important;
+            width: 100%;
+        }
+        
+        .pdf-wide-container {
+            width: 100%;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            overflow: hidden;
+            margin-top: 1.5rem;
+        }
     </style>
 </head>
 <body>
+<section class="wide-section" style="margin: 0 auto; padding: 0 1rem;">
     <div class="card" style="margin-bottom: 2rem;">
         <h3 class="card-title">QAOAscheduling</h3>
         <p class="subtitle">A Reproducible QUBO–QAOA Benchmark for Generalized Bipartite Assignment on NISQ Hardware</p>
@@ -47,5 +61,6 @@
             <p>It appears your browser doesn't support embedded PDFs. You can <a href="paper/QI26_20_preprint.pdf" target="_blank">download the PDF here</a>.</p>
         </object>
     </div>
+</section>
 </body>
 </html>
